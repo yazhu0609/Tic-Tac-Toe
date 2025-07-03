@@ -40,3 +40,13 @@ button {
   border-radius: 12px;
   background-color: #eed3e9;
 }
+
+@media (max-width:1250px){
+    /* 螢幕寬度小於1250px，套用這個區塊的css */
+    .list{
+        flex-wrap: wrap;
+    }
+    .product{
+        width: 45%;
+    }
+}
