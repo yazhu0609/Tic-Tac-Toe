@@ -1,0 +1,42 @@
+body {
+  font-style: Arial;
+  text-align: center; /*標題置中*/
+  padding: 40px;
+}
+
+.board {
+  width: 300px;
+  height: 300px;
+  margin: 20px auto;
+  display: grid; /*內外容器*/
+  grid-template-columns: repeat(3, 1fr);/*一排三個格子*/
+  gap: 5px;
+}
+
+.cell {
+  background: #ffffff;
+  border: 2px solid #efb9e1;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;/*文字水平置中*/
+  cursor: grab;/*鼠標樣式*/
+}
+
+.cell:hover {
+  background: #f2d9ed;/*指標指向格子變色*/
+}
+
+.status {
+  margin-top: 15px;
+  font-weight: bold;
+  min-height: 1.5em;
+}
+
+button {
+  margin-top: 10px;
+  padding: 6px 16px;
+  font-size: 1rem;
+  border-radius: 12px;
+  background-color: #eed3e9;
+}
