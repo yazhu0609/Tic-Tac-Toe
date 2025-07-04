@@ -4,28 +4,39 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>井字遊戲</title>
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>井字遊戲</h1>
-    <!--board=九宮格-->
-  <div id="board" class="board">
-    <!-- 每個格子 -->
-    <div class="cell" data-index="0"></div> <!--class=類型-->
-    <div class="cell" data-index="1"></div> <!--data-index=格子索引-->
-    <div class="cell" data-index="2"></div>
-    <div class="cell" data-index="3"></div>
-    <div class="cell" data-index="4"></div>
-    <div class="cell" data-index="5"></div>
-    <div class="cell" data-index="6"></div>
-    <div class="cell" data-index="7"></div>
-    <div class="cell" data-index="8"></div>
-  </div>
-  <!--status=動態顯示-->
-  <p id="status" class="status">輪到玩家 O</p>
-  <!--restartBtn=動態顯示-->
-  <button id="restartBtn">重新開始</button>
-
+  <header class="header">
+        <a href="#home"><img src="starlogo.svg" alt="雅筑的井字遊戲" class="header-icon" /></a>
+  </header>
+  <main>
+    <div class="game">
+        <div class="game-main">
+            <h1>✿開始遊玩✿</h1>
+            <h4>請直接點擊格子開始遊戲</h4>
+              <!--board=九宮格-->
+            <div id="board" class="board">
+              <!-- 每個格子 -->
+              <div class="cell" data-index="0"></div> <!--class=類型-->
+              <div class="cell" data-index="1"></div> <!--data-index=格子索引-->
+              <div class="cell" data-index="2"></div>
+              <div class="cell" data-index="3"></div>
+              <div class="cell" data-index="4"></div>
+              <div class="cell" data-index="5"></div>
+              <div class="cell" data-index="6"></div>
+              <div class="cell" data-index="7"></div>
+              <div class="cell" data-index="8"></div>
+            </div>
+            <!--status=動態顯示-->
+            <p id="status" class="status">輪到玩家 O</p>
+            <!--restartBtn=動態顯示-->
+            <button id="restartBtn">重新開始</button>
+        </div>
+      </div>
+    </div>
+  </main>
   <script src="app.js"></script>
 </body>
 </html>

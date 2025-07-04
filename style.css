@@ -1,7 +1,18 @@
 body {
   font-style: Arial;
   text-align: center; /*標題置中*/
-  padding: 40px;
+  background-color: #fff5fb;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  background-color: #fff5fb;
+}
+
+.title{
+  color: #764362;
 }
 
 .board {
@@ -39,14 +50,19 @@ button {
   font-size: 1rem;
   border-radius: 12px;
   background-color: #eed3e9;
+  color: #764362;
 }
 
-@media (max-width:1250px){
-    /* 螢幕寬度小於1250px，套用這個區塊的css */
-    .list{
-        flex-wrap: wrap;
-    }
-    .product{
-        width: 45%;
-    }
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: #eed3e9;
+    height: 5 rem; 
+}
+
+.header-icon{
+    width: 3rem;
+    filter: invert();
 }
